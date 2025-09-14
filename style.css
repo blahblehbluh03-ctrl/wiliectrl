@@ -1,81 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-body, html {
-  height: 100%;
-  background: linear-gradient(270deg, #bbb, #888);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-
-.container {
+header {
   text-align: center;
+  background: #4e73df;
   color: white;
+  padding: 2rem 1rem;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding: 5px;
-  border: 5px solid;
-  border-image: linear-gradient(45deg, #9b59b6, #8e44ad, #9b59b6) 1;
-  animation: borderGlow 3s ease infinite;
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-@keyframes borderGlow {
-  0% {border-image: linear-gradient(45deg, #9b59b6, #8e44ad, #9b59b6) 1;}
-  50% {border-image: linear-gradient(45deg, #8e44ad, #9b59b6, #8e44ad) 1;}
-  100% {border-image: linear-gradient(45deg, #9b59b6, #8e44ad, #9b59b6) 1;}
-}
-
-.name, .title, .subtitle, .btn {
-  margin: 15px 0;
-  background: linear-gradient(90deg, #9b59b6, #8e44ad, #9b59b6);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: textGlow 3s ease infinite;
-}
-
-@keyframes textGlow {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-
-.btn {
+form label {
   display: block;
-  text-decoration: none;
-  margin: 10px auto;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  width: 200px;
-  color: white;
-  transition: 0.3s;
+  margin-top: 1rem;
 }
 
-.instagram { background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
-.discord { background: #5865F2; }
-.tiktok { background: #000; }
-.whatsapp { background: #25D366; }
+form input, form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-.btn:hover {
-  opacity: 0.85;
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  width: 100%;
+  background: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2e59d9;
+}
+
+#result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #e2e8f0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fc;
+  margin-top: 2rem;
 }
